@@ -3,6 +3,7 @@
     "botClientId": "919212093444616203",
     "onReadyChannel": "935194323992051742",
     "clientServerJoinLeaveNotifyChannel": "935198684688293908",
+    "liveStatusChannel": "935224891475640331",
     "testServerGuildId": "919208128313171978",
     "botOwnerId": "741522321344430171",
     "botPrefix": "c$",
