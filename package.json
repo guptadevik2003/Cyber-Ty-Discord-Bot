@@ -1,0 +1,43 @@
+{
+  "name": "cyber-ty-discord-bot",
+  "version": "1.0.0",
+  "engines": {
+    "node": "17.x"
+  },
+  "description": "https://cyberty.mapleclub.top",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guptadevik2003/Cyber-Ty-Discord-Bot.git"
+  },
+  "author": "Devik_NotFound#2695",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guptadevik2003/Cyber-Ty-Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/guptadevik2003/Cyber-Ty-Discord-Bot#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^0.11.0",
+    "@discordjs/rest": "^0.2.0-canary.0",
+    "ascii-table": "^0.0.9",
+    "canvacord": "^5.2.3",
+    "discord-api-types": "^0.26.1",
+    "discord.js": "^13.6.0",
+    "dotenv": "^14.2.0",
+    "erela.js": "^2.3.3",
+    "erela.js-filters": "^1.2.6",
+    "erela.js-spotify": "^1.2.0",
+    "fs": "^0.0.1-security",
+    "mathjs": "^10.1.0",
+    "mongoose": "^6.1.7",
+    "node-fetch": "^2.6.6",
+    "parse-ms": "^2.1.0"
+  }
+}

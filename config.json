@@ -1,0 +1,12 @@
+{
+    "botInviteLink": "https://discord.com/api/oauth2/authorize?client_id=919212093444616203&permissions=1241211333751&scope=bot%20applications.commands",
+    "botClientId": "919212093444616203",
+    "onReadyChannel": "935194323992051742",
+    "clientServerJoinLeaveNotifyChannel": "935198684688293908",
+    "testServerGuildId": "919208128313171978",
+    "botOwnerId": "741522321344430171",
+    "botPrefix": "c$",
+    "supportServerLink": "https://discord.gg/XUwgs6vp36",
+    "botWebsite": "https://cyberty.mapleclub.top",
+    "topGGVoteLink": "https://top.gg/bot/919212093444616203/vote"
+}
