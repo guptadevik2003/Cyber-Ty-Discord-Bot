@@ -1,59 +1,3 @@
-// module.exports = {
-//     async execute(client) {
-
-//         
-
-//         
-
-
-
-//         // Bot Dashboard Database Interval
-//         setInterval( async () => {
-
-//             let botUserCount = 0
-//             for (const g of client.guilds.cache) {
-//                 botUserCount += g[1].memberCount
-//             }
-            
-//             let dashboardData = await dashboardSchema.findOne({ botUserId: client.user.id })
-//             if (!dashboardData) {
-
-//                 let newDashboardData = await new dashboardSchema({
-//                     _id: mongoose.Types.ObjectId(),
-//                     botUserId: client.user.id,
-//                     botUserName: client.user.username,
-//                     botUserTag: client.user.tag,
-//                     botAvatar: client.user.displayAvatarURL(),
-//                     botUptime: client.uptime,
-//                     botUptimeUpdatedAt: Date.now(),
-//                     botWSPing: client.ws.ping,
-//                     botGuildCount: client.guilds.cache.size,
-//                     botUserCount: botUserCount
-//                 })
-//                 await newDashboardData.save().catch(err => console.log(err))
-
-//             } else {
-
-//                 await dashboardSchema.findOneAndUpdate({ botUserId: client.user.id }, {
-//                     botUserName: client.user.username,
-//                     botUserTag: client.user.tag,
-//                     botAvatar: client.user.displayAvatarURL(),
-//                     botUptime: client.uptime,
-//                     botUptimeUpdatedAt: Date.now(),
-//                     botWSPing: client.ws.ping,
-//                     botGuildCount: client.guilds.cache.size,
-//                     botUserCount: botUserCount
-//                 })
-//             } 
-            
-//         }, secToMs(60));
-
-//     }
-// }
-
-
-
-// New Code
 const { onReadyChannel, botPrefix, botWebsite, supportServerLink, botInviteLink, liveStatusChannel } = require('../config.json')
 const dashboardSchema = require('../schemas/dashboard')
 const { dependencies } = require('../package.json')
@@ -146,7 +90,50 @@ module.exports = {
 
             statusMessage.edit({ embeds: [statusEmbed] })
 
-        }, secToMs(9));
+        }, secToMs(69));
+
+
+        // Bot Dashboard Database Interval
+        setInterval( async () => {
+            
+            let botUserCount = 0
+            for (const g of client.guilds.cache) {
+                botUserCount += g[1].memberCount
+            }
+
+            let dashboardData = await dashboardSchema.findOne({ botUserId: client.user.id })
+            if (!dashboardData) {
+
+                let newDashboardData = await new dashboardSchema({
+                    botUserId: client.user.id,
+                    botUserName: client.user.username,
+                    botUserTag: client.user.tag,
+                    botAvatar: client.user.displayAvatarURL(),
+                    botUptime: client.uptime,
+                    botUptimeUpdatedAt: Date.now(),
+                    botWSPing: client.ws.ping,
+                    botGuildCount: client.guilds.cache.size,
+                    botUserCount: botUserCount
+                })
+                await newDashboardData.save().catch(err => console.log(err))
+
+            } else {
+
+                await dashboardSchema.findOneAndUpdate({ botUserId: client.user.id }, {
+                    botUserName: client.user.username,
+                    botUserTag: client.user.tag,
+                    botAvatar: client.user.displayAvatarURL(),
+                    botUptime: client.uptime,
+                    botUptimeUpdatedAt: Date.now(),
+                    botWSPing: client.ws.ping,
+                    botGuildCount: client.guilds.cache.size,
+                    botUserCount: botUserCount
+                })
+
+            }
+
+        }, secToMs(60));
+
 
     }
 }
