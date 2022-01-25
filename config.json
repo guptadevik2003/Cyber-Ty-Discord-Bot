@@ -4,6 +4,8 @@
     "onReadyChannel": "935194323992051742",
     "clientServerJoinLeaveNotifyChannel": "935198684688293908",
     "liveStatusChannel": "935224891475640331",
+    "cyberTySupportWelcomeChannel": "935534222704275556",
+    "supportServerGuildId": "935188838861664298",
     "testServerGuildId": "919208128313171978",
     "botOwnerId": "741522321344430171",
     "botPrefix": "c$",
