@@ -92,7 +92,8 @@ module.exports.run = async ({ client, message, args, prefix }) => {
                         `${arwP} **${pre}ping** - Runs a connection test to Discord.\n` +
                         `${arwG} **${pre}serverinfo** - Shows some info about your server.\n` +
                         `${arwP} **${pre}stats** - Returns some details about the bot.\n` +
-                        `${arwG} **${pre}vote** - Like ${client.user.username}? Vote now :)`)
+                        `${arwG} **${pre}support** - Support Server of Cyber Ty.\n` +
+                        `${arwP} **${pre}vote** - Like ${client.user.username}? Vote now :)`)
         .setThumbnail(`https://media.giphy.com/media/EPdbysBHd51Li/giphy.gif`)
         .setFooter({ text: `${message.author.username}`, iconURL: `${message.author.displayAvatarURL()}` })
 
