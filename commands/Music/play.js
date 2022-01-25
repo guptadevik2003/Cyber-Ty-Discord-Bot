@@ -82,10 +82,10 @@ module.exports.run = async ({ client, message, args, prefix }) => {
             .setColor(`#00ffff`)
             .setAuthor({ name: `Added Track to Queue` })
             .setTitle(res.tracks[0].title)
-            .setURL(res.tracks[0].uri)
+            .setURL(res.tracks[0].uri ? res.tracks[0].uri : searchQuery)
             .setDescription(`**Duration:** ${await client.MSFormatter(res.tracks[0].duration)}\n` +
                             `**Requested By:** <@${res.tracks[0].requester.id}>`)
-            .setThumbnail(res.tracks[0].thumbnail)
+            .setThumbnail(res.tracks[0].thumbnail ? res.tracks[0].thumbnail : 'https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-download-logo-30.png')
 
         message.channel.send({ embeds: [trackEmbed] })
 
