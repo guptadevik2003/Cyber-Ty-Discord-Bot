@@ -54,7 +54,6 @@ module.exports = {
         const notifyEmbed = new MessageEmbed()
             .setColor(`GREEN`)
             .setTitle(`Joined ${guild.name.substring(0,25)}`)
-            .setThumbnail(`${guild.iconURL()}`)
             .setDescription(`MemberCount: **${guild.memberCount}**\n` +
                             `Id: **${guild.id}**\n` +
                             `OwnerId: **${guild.ownerId}**`)

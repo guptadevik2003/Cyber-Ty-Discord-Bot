@@ -15,7 +15,6 @@ module.exports = {
         const notifyEmbed = new MessageEmbed()
             .setColor(`RED`)
             .setTitle(`Left ${guild.name.substring(0,25)}`)
-            .setThumbnail(`${guild.iconURL()}`)
             .setDescription(`MemberCount: **${guild.memberCount}**\n` +
                             `Id: **${guild.id}**\n` +
                             `OwnerId: **${guild.ownerId}**`)
