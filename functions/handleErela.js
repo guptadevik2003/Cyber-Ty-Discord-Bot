@@ -1,16 +1,16 @@
 const { Manager } = require('erela.js')
-// const Spotify = require('erela.js-spotify')
+const Spotify = require('erela.js-spotify')
 const filterPlugin = require('erela.js-filters')
 const { botClientId } = require('../config.json')
 
-// const clientID = process.env.SPOTIFY_CLIENT_ID
-// const clientSecret = process.env.SPOTIFY_CLIENT_SECRET
+const clientID = process.env.SPOTIFY_CLIENT_ID
+const clientSecret = process.env.SPOTIFY_CLIENT_SECRET
 
 const plugins = [
-    // new Spotify({
-    //     clientID,
-    //     clientSecret        
-    // }),
+    new Spotify({
+        clientID,
+        clientSecret
+    }),
     new filterPlugin()
 ]
 

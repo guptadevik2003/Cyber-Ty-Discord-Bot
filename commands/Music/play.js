@@ -64,8 +64,8 @@ module.exports.run = async ({ client, message, args, prefix }) => {
             .setTitle(res.playlist.name)
             .setURL(searchQuery)
             .setDescription(`**Duration:** ${await client.MSFormatter(res.playlist.duration)} <${res.tracks.length} Songs>\n` +
-                            `**Requested By:** <@${res.playlist.selectedTrack.requester.id}>`)
-            .setThumbnail(res.playlist.selectedTrack.thumbnail)
+                            `**Requested By:** <@${res.playlist.selectedTrack ? res.playlist.selectedTrack.requester.id : message.author.id}>`)
+            .setThumbnail(res.playlist.selectedTrack ? res.playlist.selectedTrack.thumbnail : 'https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-download-logo-30.png')
 
         message.channel.send({ embeds: [playlistEmbed] })
 
