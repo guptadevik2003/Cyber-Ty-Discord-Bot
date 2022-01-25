@@ -14,7 +14,7 @@ module.exports.run = async ({ client, message, args, prefix }) => {
 
     const filterEmbed = new MessageEmbed()
         .setColor(`#00ffff`)
-        .setAuthor(`Filters`, `${client.user.displayAvatarURL()}`)
+        .setAuthor({ name: `Filters`, iconURL: `${client.user.displayAvatarURL()}` })
         .setDescription(`**You can use these filters.**\n` +
                         `**Usage:** \`${prefix}filter vaporwave\`\n\n` +
                         `\`\`\`yml\n` +
@@ -28,7 +28,7 @@ module.exports.run = async ({ client, message, args, prefix }) => {
                         `\`\`\`\n\n`)
         .setThumbnail(client.user.displayAvatarURL())
         .setTimestamp()
-        .setFooter(`${message.author.username}`, `${message.author.displayAvatarURL()}`)
+        .setFooter({ text: `${message.author.username}`, iconURL: `${message.author.displayAvatarURL()}` })
 
     if (!args[0]) return message.reply({ embeds: [filterEmbed] })
 

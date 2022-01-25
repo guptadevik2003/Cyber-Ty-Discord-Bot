@@ -12,7 +12,7 @@ module.exports.run = async ({ client, message, args, prefix }) => {
 
     guilds.forEach(guild => {
         users += guild.memberCount
-        guildInfo += `${guild.id}: ${guild.name.substring(0,25)} [${guild.memberCount} Users]\n`
+        guildInfo += `${guild.id}: ${guild.name.substring(0,25).replace('#', '\#')} [${guild.memberCount} Users]\n`
     })
 
     const serversEmbed = new MessageEmbed()
