@@ -1,3 +1,4 @@
+const { MessageEmbed } = require('discord.js')
 const { Manager } = require('erela.js')
 const Spotify = require('erela.js-spotify')
 const filterPlugin = require('erela.js-filters')
@@ -60,7 +61,11 @@ module.exports = (client) => {
 
     client.handleErela.on('queueEnd', async (player) => {
         const channel = await getChannel(player)
-        channel.send(`Queue has Ended, leaving <#${player.voiceChannel}>`)
+        const queueEndEmbed = new MessageEmbed()
+            .setColor(`#00ffff`)
+            .setDescription(`**Queue has ended**, Leaving <#${player.voiceChannel}>`)
+        channel.send({ embeds: [queueEndEmbed] })
+
         try {
             player.destroy()
         } catch (err) {
@@ -69,6 +74,8 @@ module.exports = (client) => {
     })
 
     client.handleErela.on('trackStart', async (player, track) => {
+        if (player.trackRepeat || player.queueRepeat) return
+        
         const channel = await getChannel(player)
         channel.send(`:headphones: Playing **${track.title}** requested by **${track.requester.username}**`)
     })
