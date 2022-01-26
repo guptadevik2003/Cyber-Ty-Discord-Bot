@@ -40,7 +40,8 @@ module.exports.run = async ({ client, message, args, prefix }) => {
         player = client.handleErela.create({
             guild: message.guild.id,
             voiceChannel: voiceChannel.id,
-            textChannel: message.channel.id
+            textChannel: message.channel.id,
+            selfDeafen: true
         })
 
         try {
