@@ -38,5 +38,5 @@ module.exports.help = {
     name: 'clear',
     aliases: ['purge'],
     description: 'Clears the amount of messages from a channel.',
-    usage: 'clear <deleteAmount>'
+    usage: 'clear <amount>'
 }

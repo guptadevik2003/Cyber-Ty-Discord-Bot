@@ -32,5 +32,5 @@ module.exports.help = {
     name: 'ban',
     aliases: [],
     description: 'Bans a member from your server.',
-    usage: 'ban @CocoMelon'
+    usage: 'ban <@CocoMelon / userID>'
 }
