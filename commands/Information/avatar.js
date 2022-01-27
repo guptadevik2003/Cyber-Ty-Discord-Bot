@@ -20,5 +20,5 @@ module.exports.help = {
     name: 'avatar',
     aliases: ['av'],
     description: 'Displays the avatar of the user.',
-    usage: 'avatar'
+    usage: 'avatar [@CocoMelon / userID]'
 }

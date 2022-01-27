@@ -232,5 +232,5 @@ module.exports.help = {
     name: 'help',
     aliases: [],
     description: 'Shows list of all commands & other information.',
-    usage: 'help <commandName>'
+    usage: 'help [command]'
 }
