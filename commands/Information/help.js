@@ -38,7 +38,8 @@ module.exports.run = async ({ client, message, args, prefix }) => {
                         `So there might be some bugs and random crashes.\n\n` +
                         `Contact <@${botOwnerId}> or join\n` +
                         `**[Support Server](${supportServerLink} 'Support Server')** if you face any issue.`)
-        .setImage(`https://share.creavite.co/ASmcZYvQmepVNfhC.gif`)
+        // .setImage(`https://share.creavite.co/ASmcZYvQmepVNfhC.gif`)
+        .setImage(`https://share.creavite.co/iY7Y5n9Rd7dbg4WJ.gif`)
         .setFooter({ text: `${message.author.username}`, iconURL: `${message.author.displayAvatarURL()}` })
 
 
