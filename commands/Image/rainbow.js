@@ -14,5 +14,5 @@ module.exports.help = {
     name: 'rainbow',
     aliases: [],
     description: 'Sends a photo that shows the mentioned user avatar raindowed.',
-    usage: 'rainbow'
+    usage: 'rainbow [@CocoMelon / userID]'
 }

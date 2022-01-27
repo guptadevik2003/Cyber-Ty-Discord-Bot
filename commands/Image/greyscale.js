@@ -14,5 +14,5 @@ module.exports.help = {
     name: 'greyscale',
     aliases: [],
     description: 'Sends a greyscale photo of the user.',
-    usage: 'greyscale'
+    usage: 'greyscale [@CocoMelon / userID]'
 }

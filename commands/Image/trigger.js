@@ -14,5 +14,5 @@ module.exports.help = {
     name: 'trigger',
     aliases: ['triggered'],
     description: 'Sends a photo with user triggered.',
-    usage: 'trigger'
+    usage: 'trigger [@CocoMelon / userID]'
 }

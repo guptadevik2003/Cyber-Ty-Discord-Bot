@@ -14,5 +14,5 @@ module.exports.help = {
     name: 'wanted',
     aliases: [],
     description: 'Sends a photo with mentioned user wanted.',
-    usage: 'wanted'
+    usage: 'wanted [@CocoMelon / userID]'
 }

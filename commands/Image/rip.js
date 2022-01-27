@@ -14,5 +14,5 @@ module.exports.help = {
     name: 'rip',
     aliases: [],
     description: '"F" in the chat please.',
-    usage: 'rip'
+    usage: 'rip [@CocoMelon / userID]'
 }

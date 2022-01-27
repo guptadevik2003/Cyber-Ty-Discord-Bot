@@ -14,5 +14,5 @@ module.exports.help = {
     name: 'circle',
     aliases: [],
     description: 'Sends a clicle photo of the mentioned user.',
-    usage: 'circle'
+    usage: 'circle [@CocoMelon / userID]'
 }

@@ -14,5 +14,5 @@ module.exports.help = {
     name: 'blur',
     aliases: [],
     description: 'Sends a blur photo of the user.',
-    usage: 'blur'
+    usage: 'blur [@CocoMelon / userID]'
 }

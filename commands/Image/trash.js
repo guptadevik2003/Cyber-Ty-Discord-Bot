@@ -14,5 +14,5 @@ module.exports.help = {
     name: 'trash',
     aliases: [],
     description: 'Sends a photo trashing mentioned user.',
-    usage: 'trash'
+    usage: 'trash [@CocoMelon / userID]'
 }
