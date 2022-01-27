@@ -43,5 +43,5 @@ module.exports.help = {
     name: 'repeat',
     aliases: [],
     description: 'Repeats a song / queue infinitely.',
-    usage: 'repeat <off | song | queue>'
+    usage: 'repeat <off / song / queue>'
 }

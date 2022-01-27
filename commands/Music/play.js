@@ -102,5 +102,5 @@ module.exports.help = {
     name: 'play',
     aliases: ['p'],
     description: 'Play or add songs using song name / URL.',
-    usage: 'play <song Name / URL>'
+    usage: 'play <songName / URL>'
 }
