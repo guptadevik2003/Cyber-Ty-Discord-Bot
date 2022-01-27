@@ -31,6 +31,6 @@ module.exports.run = async ({ client, message, args, prefix }) => {
 module.exports.help = {
     name: 'setprefix',
     aliases: ['prefix'],
-    description: 'Sets a custom prefix for each server.',
+    description: 'Set a Custom Prefix for your Server.',
     usage: 'setprefix <newPrefix>'
 }

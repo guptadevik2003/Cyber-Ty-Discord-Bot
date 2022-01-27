@@ -28,6 +28,6 @@ module.exports.run = async ({ client, message, args, prefix }) => {
 module.exports.help = {
     name: 'deletechannel',
     aliases: ['delchannel'],
-    description: 'Disable Cyber Ty Chatbot IF added.',
+    description: 'Disable Cyber Ty\'s Chatbot feature.',
     usage: 'deletechannel'
 }

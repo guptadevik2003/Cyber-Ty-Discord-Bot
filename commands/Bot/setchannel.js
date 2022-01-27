@@ -65,6 +65,6 @@ module.exports.run = async ({ client, message, args, prefix }) => {
 module.exports.help = {
     name: 'setchannel',
     aliases: [],
-    description: 'Sets a channel where users can use Chatbot.',
-    usage: 'setchannel <#channel>'
+    description: 'Set a channel for Cyber Ty\'s Chatbot feature.',
+    usage: 'setchannel <#channel / channelID>'
 }

@@ -101,5 +101,5 @@ module.exports.help = {
     name: 'counting',
     aliases: [],
     description: 'Add / Delete channel for Counting.',
-    usage: 'counting <add/delete>'
+    usage: 'counting <add / delete>'
 }
