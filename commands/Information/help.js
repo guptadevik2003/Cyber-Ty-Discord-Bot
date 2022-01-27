@@ -17,15 +17,15 @@ module.exports.run = async ({ client, message, args, prefix }) => {
 
         const usageEmbed = new MessageEmbed()
             .setColor(`#00ffff`)
-            .setAuthor({ name: `${command.help.name} Command`, iconURL: `${client.user.displayAvatarURL()}` })
-            .setDescription(`**Name:**\n\`${command.help.name}\`\n\n` +
-                            `**Alias:**\n\`${command.help.aliases.join(' | ') || 'No Aliases'}\`\n\n` +
-                            `**Usage:**\n\`${pre}${command.help.usage}\`\n\n` +
-                            `**Description:**\n${command.help.description}`)
+            .setTitle(`${command.help.name} command`)
+            .setDescription(`${command.help.description}`)
+            .addField(`Usage`, `${pre}${command.help.usage}`, false)
+            .addField(`Alias`, `${command.help.aliases.join(' | ') || 'No Aliases'}`, false)
             .setThumbnail(`https://media.giphy.com/media/EPdbysBHd51Li/giphy.gif`)
-            .setFooter({ text: `${message.author.username}`, iconURL: `${message.author.displayAvatarURL()}` })
+            .setFooter({ text: `<> is Required • [] is Optional`, iconURL: `${message.author.displayAvatarURL()}` })
 
         return message.reply({ embeds: [usageEmbed] })
+        
     }
 
     // ========== General Help ==========
