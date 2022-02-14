@@ -20,6 +20,12 @@ const nodes = [
         host: `173.249.9.178`,
         password: `EpikHostOnTop`,
         port: 5074,
+    },
+    {
+        host: `lavalink-replit.guptadevik2003.repl.co`,
+        password: `maybeiwasboring`,
+        port: 443,
+        secure: true
     }
 ]
 
