@@ -28,7 +28,7 @@
     "@discordjs/rest": "^0.3.0",
     "ascii-table": "^0.0.9",
     "canvacord": "^5.2.3",
-    "discord-api-types": "^0.27.1",
+    "discord-api-types": "^0.27.2",
     "discord.js": "^13.6.0",
     "dotenv": "^16.0.0",
     "erela.js": "^2.3.3",
@@ -36,7 +36,7 @@
     "erela.js-spotify": "^1.2.0",
     "fs": "^0.0.1-security",
     "mathjs": "^10.1.1",
-    "mongoose": "^6.2.1",
+    "mongoose": "^6.2.2",
     "node-fetch": "^2.6.6",
     "parse-ms": "^2.1.0"
   }
