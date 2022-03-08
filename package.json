@@ -28,15 +28,15 @@
     "@discordjs/rest": "^0.3.0",
     "ascii-table": "^0.0.9",
     "canvacord": "^5.2.3",
-    "discord-api-types": "^0.27.2",
+    "discord-api-types": "^0.28.0",
     "discord.js": "^13.6.0",
     "dotenv": "^16.0.0",
     "erela.js": "^2.3.3",
     "erela.js-filters": "^1.2.7",
     "erela.js-spotify": "^1.2.0",
     "fs": "^0.0.1-security",
-    "mathjs": "^10.1.1",
-    "mongoose": "^6.2.2",
+    "mathjs": "^10.4.0",
+    "mongoose": "^6.2.4",
     "node-fetch": "^2.6.6",
     "parse-ms": "^2.1.0"
   }
