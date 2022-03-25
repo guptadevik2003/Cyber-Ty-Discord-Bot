@@ -22,7 +22,7 @@ const nodes = [
         port: 5074,
     },
     {
-        host: `lavalink-replit.guptadevik2003.repl.co`,
+        host: `lavalink.mapleclub.top`,
         password: `maybeiwasboring`,
         port: 443,
         secure: true
