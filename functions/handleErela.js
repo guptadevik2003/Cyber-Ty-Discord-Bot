@@ -21,7 +21,13 @@ const nodes = [
         password: `maybeiwasboring`,
         port: 443,
         secure: true
-    }
+    },
+    {
+        host: `lavalink.oops.wtf`,
+        password: `www.freelavalink.ga`,
+        port: 443,
+        secure: true
+    },
 ]
 
 module.exports = (client) => {
