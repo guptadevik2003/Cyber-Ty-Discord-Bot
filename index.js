@@ -1,3 +1,4 @@
+// const { Client, GatewayIntentBits, Collection } = require('discord.js')
 const { Client, Intents, Collection } = require('discord.js')
 const fs = require('fs')
 require('dotenv').config()
@@ -6,6 +7,25 @@ const client = new Client({
     partials: [
         'CHANNEL',
     ],
+    // intents: [
+    //     GatewayIntentBits.DirectMessageReactions,
+    //     // GatewayIntentBits.DirectMessageTyping,
+    //     GatewayIntentBits.DirectMessages,
+    //     GatewayIntentBits.GuildBans,
+    //     GatewayIntentBits.GuildEmojisAndStickers,
+    //     // GatewayIntentBits.GuildIntegrations,
+    //     GatewayIntentBits.GuildInvites,
+    //     GatewayIntentBits.GuildMembers,
+    //     GatewayIntentBits.GuildMessageReactions,
+    //     // GatewayIntentBits.GuildMessageTyping,
+    //     GatewayIntentBits.GuildMessages,
+    //     GatewayIntentBits.GuildPresences,
+    //     // GatewayIntentBits.GuildScheduledEvents,
+    //     GatewayIntentBits.GuildVoiceStates,
+    //     GatewayIntentBits.GuildWebhooks,
+    //     GatewayIntentBits.Guilds,
+    //     GatewayIntentBits.MessageContent,
+    // ],
     intents: [
         Intents.FLAGS.GUILDS,
         Intents.FLAGS.GUILD_MEMBERS,
