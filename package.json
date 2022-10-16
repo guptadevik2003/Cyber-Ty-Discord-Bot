@@ -2,13 +2,14 @@
   "name": "cyber-ty-discord-bot",
   "version": "1.0.0",
   "engines": {
-    "node": "18.x"
+    "node": "16.x"
   },
   "description": "https://cyberty.mapleclub.top",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "nodemon index.js"
+    "test": "nodemon index.js",
+    "forever": "npm install && forever start --uid \"CTB\" --append index.js && forever list"
   },
   "repository": {
     "type": "git",
