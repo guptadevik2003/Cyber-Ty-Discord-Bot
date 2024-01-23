@@ -3,8 +3,10 @@ const mongoose = require('mongoose')
 module.exports = (client) => {
     client.mongooseLogin = async () => {
 
+        mongoose.set('strictQuery', false)
         mongoose.Promise = global.Promise
-        await mongoose.connect(process.env.CYBERTY_MONGODB)
+
+        mongoose.connect(process.env.CYBERTY_MONGODB)
 
         mongoose.connection.on('connected', async () => {
             console.log(`Connected to Project Cyber Ty Bot Database.`)
