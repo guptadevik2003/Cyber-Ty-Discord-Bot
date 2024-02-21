@@ -17,17 +17,29 @@ const plugins = [
 
 const nodes = [
     {
-        host: `lavalink-replit.guptadevik2003.repl.co`,
-        password: `maybeiwasboring`,
-        port: 443,
-        secure: true
+        host: '127.0.0.1',
+        password: 'devikwasboring2003',
+        port: 2003,
+        secure: false
     },
     {
-        host: `lavalink.oops.wtf`,
-        password: `www.freelavalink.ga`,
-        port: 443,
-        secure: true
+        host: 'lavalink.teramont.net',
+        password: 'eHKuFcz67k4lBS64',
+        port: 25565,
+        secure: false
     },
+    {
+        host: 'lavalink.micium-hosting.com',
+        password: 'micium-hosting.com',
+        port: 80,
+        secure: false
+    },
+    {
+        host: 'lavalink.jirayu.pw',
+        password: 'youshallnotpass',
+        port: 2343,
+        secure: false
+    }
 ]
 
 module.exports = (client) => {
