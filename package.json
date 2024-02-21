@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "nodemon index.js",
-    "forever": "npm install && forever start --uid \"CTB\" --append index.js && forever list"
+    "forever": "forever start --uid \"CTDB\" -a index.js && forever list"
   },
   "repository": {
     "type": "git",
